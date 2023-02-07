@@ -16,8 +16,14 @@ Here are some example outputs of the two respective files:
 ![Mean optimal action per timestep](Mean_Optimal_Action.png "Mean Optimal Action")
 ## Parameters
 * **kArms**: number of arms/levers of bandit
-* **mean*:  Each arm/lever generates a reward from a normal distribution. The means of these distributions are themselves generated from a (meta) normal distribution, which has this mean.
+* **mean**:  Each arm/lever generates a reward from a normal distribution. The means of these distributions are themselves generated from a (meta) normal distribution, which has this mean.
 * **variance**: The variance of all distributions. Note that both the distributions of each individual arm, as well as the meta distribution for the mean values have the same variance.
 * **epsilon**: Probability of choosing a random action instead of current best action
 * **nRuns**:   Number of runs in the ensemble. E.g. nRuns =10 means that the k-armed bandit is initialized and run a total of 10 times.
 * **nStepsPerRun**: Number of timestapes each instance of the ensemble runs.
+## Implementation Notes
+### Exploration method
+The algorithm uses &epsilon-greedy action selection, meaning that in &epsilon % of timesteps a random action is taken. In all other timesteps,
+action with the currently highest estimated reward is chosen.
+### Estimation of action values/rewards
+The estimation of action values/rewards is done as described in section 2.4 of the book, i.e. simply averaging over all previously encounterd rewards for reach action. The initial reward estimates are all zero.
