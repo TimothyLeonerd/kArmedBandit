@@ -27,3 +27,5 @@ The algorithm uses $\epsilon$-greedy action selection, meaning that in $\epsilon
 action with the currently highest estimated reward is chosen.
 ### Estimation of action values/rewards
 The estimation of action values/rewards is done as described in section 2.4 of the book, i.e. simply averaging over all previously encounterd rewards for reach action. The initial reward estimates are all zero.
+### Visualize Data
+The python script pltBandit.py can be used to plot the results.
