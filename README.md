@@ -10,5 +10,5 @@ After running the program, two output files are produced:
 * meanOptimalActionLog_eps_xxx.txt: This contains the percentage of times, the optimal action was taken at each specific timestep. Corresponds to the bottom in Figure 2.2 of Sutton and Barto 
 
 Here are some example outputs of the two respective files:
-![Mean reward per timestep](Mean_Reward.pdf "Mean Reward")
-![Mean optimal action per timestep](Mean_Optimal_Action.pdf "Mean Optimal Action")
+![Mean reward per timestep](Mean_Reward.png "Mean Reward")
+![Mean optimal action per timestep](Mean_Optimal_Action.png "Mean Optimal Action")
