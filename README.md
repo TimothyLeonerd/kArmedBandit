@@ -23,7 +23,7 @@ Here are some example outputs of the two respective files:
 * **nStepsPerRun**: Number of timestapes each instance of the ensemble runs.
 ## Implementation Notes
 ### Exploration method
-The algorithm uses &epsilon-greedy action selection, meaning that in &epsilon % of timesteps a random action is taken. In all other timesteps,
+The algorithm uses $$&epsilon$$-greedy action selection, meaning that in $$&epsilon$$ % of timesteps a random action is taken. In all other timesteps,
 action with the currently highest estimated reward is chosen.
 ### Estimation of action values/rewards
 The estimation of action values/rewards is done as described in section 2.4 of the book, i.e. simply averaging over all previously encounterd rewards for reach action. The initial reward estimates are all zero.
