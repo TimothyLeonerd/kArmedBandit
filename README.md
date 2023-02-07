@@ -15,9 +15,9 @@ Here are some example outputs of the two respective files:
 ![Mean reward per timestep](Mean_Reward.png "Mean Reward")
 ![Mean optimal action per timestep](Mean_Optimal_Action.png "Mean Optimal Action")
 ## Parameters
-* kArms: number of arms/levers of bandit
-* mean:  Each arm/lever generates a reward from a normal distribution. The means of these distributions are themselves generated from a (meta) normal distribution, which has this mean.
-* variance: The variance of all distributions. Note that both the distributions of each individual arm, as well as the meta distribution for the mean values have the same variance.
-* epsilon: Probability of choosing a random action instead of current best action
-* nRuns:   Number of runs in the ensemble. E.g. nRuns =10 means that the k-armed bandit is initialized and run a total of 10 times.
-* nStepsPerRun: Number of timestapes each instance of the ensemble runs.
+* **kArms**: number of arms/levers of bandit
+* **mean*:  Each arm/lever generates a reward from a normal distribution. The means of these distributions are themselves generated from a (meta) normal distribution, which has this mean.
+* **variance**: The variance of all distributions. Note that both the distributions of each individual arm, as well as the meta distribution for the mean values have the same variance.
+* **epsilon**: Probability of choosing a random action instead of current best action
+* **nRuns**:   Number of runs in the ensemble. E.g. nRuns =10 means that the k-armed bandit is initialized and run a total of 10 times.
+* **nStepsPerRun**: Number of timestapes each instance of the ensemble runs.
